@@ -1,0 +1,104 @@
+body.wallpaper-page,
+body.wallpaper-page #viewport,
+body.wallpaper-page #stage {
+  background: #d9d4cd;
+}
+.wallpaper-page #stage {
+  color: #191a16;
+}
+.wallpaper-page .three-scene {
+  opacity: 1;
+}
+.wallpaper-grid,
+.wallpaper-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.wallpaper-grid {
+  opacity: 0.18;
+  background-image: linear-gradient(rgba(40, 39, 34, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(40, 39, 34, 0.08) 1px, transparent 1px);
+  background-size: 96px 96px;
+  mask-image: radial-gradient(ellipse at 50% 45%, black 5%, transparent 76%);
+}
+.wallpaper-vignette {
+  background: radial-gradient(ellipse at 50% 48%, transparent 38%, rgba(83, 67, 52, 0.13) 100%);
+}
+.wallpaper-brand {
+  position: absolute;
+  left: 74px;
+  top: 64px;
+  z-index: 4;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.wallpaper-brand .eyebrow {
+  color: #82796f;
+  font-size: 14px;
+  letter-spacing: 0.16em;
+}
+.wallpaper-brand h1 {
+  margin: 10px 0 2px;
+  font-size: 42px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+}
+.wallpaper-brand h1 b { font-weight: 700; }
+.wallpaper-brand p {
+  margin: 0;
+  font-size: 13px;
+  color: #6c675f;
+  letter-spacing: 0.2em;
+}
+.wallpaper-mark {
+  position: absolute;
+  right: 76px;
+  top: 58px;
+  width: 116px;
+  opacity: 0.75;
+  z-index: 4;
+}
+.wallpaper-mark svg { width: 100%; height: auto; }
+.wallpaper-caption {
+  position: absolute;
+  left: 74px;
+  bottom: 76px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 4;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+}
+.wallpaper-caption span { color: #82796f; }
+.wallpaper-caption b { font-size: 26px; letter-spacing: 0.1em; font-weight: 600; }
+.wallpaper-meta {
+  position: absolute;
+  right: 76px;
+  bottom: 79px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #82796f;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  z-index: 4;
+}
+.wallpaper-meta i { width: 24px; height: 2px; background: #a36530; display: inline-block; }
+.wallpaper-progress {
+  position: absolute;
+  left: 74px;
+  right: 74px;
+  bottom: 51px;
+  height: 2px;
+  background: rgba(90, 80, 70, 0.22);
+  z-index: 4;
+}
+.wallpaper-progress i {
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform-origin: left;
+  background: #a36530;
+}
